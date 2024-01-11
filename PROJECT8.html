@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PROJECT 8 login scall JS</title>
+    <link rel="stylesheet" href="project8.css">
+</head>
+<body>
+    <div class="main">
+        <div class="login">
+            <div class="loginbx" id="LOGINBOX">
+               <form id="form1">
+                   <h2>WELCOME!</h2>
+                    <div class="inputbx">
+                        <input type="text" placeholder="user name">
+                    </div>
+                    <div class="inputbx">
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <button type="button" class="btn">LOGIN</button>
+                </form>
+                
+                 <form id="form2">
+                   <h2>CREATE ACCOUNT</h2>
+                    <div class="inputbx">
+                        <input type="text" placeholder="full name">
+                    </div>
+                    <div class="inputbx">
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <div class="inputbx">
+                        <input type="password" placeholder="Confirm Password">
+                    </div>
+                    <div class="inputbx">
+                        <input type="password" placeholder="Email Adress">
+                    </div>
+                    <button type="button" class="btn">REGISTRE</button>
+                </form> 
+            </div>
+            <button type="button" id="btnchange1">HAVE ACCOUNT</button>
+            <button type="button" id="btnchange2">CREATE ACCOUNT</button>
+        </div>
+    </div>
+    
+    
+    <script>
+     var LOGINBOX=document.getElementById("LOGINBOX");
+     var btnchange2=document.getElementById("btnchange2");
+     var btnchange1=document.getElementById("btnchange1");
+     var form1=document.getElementById("form1");
+     var form2=document.getElementById("form2");
+        
+        btnchange2.addEventListener('click',()=>{
+          LOGINBOX.style.marginLeft = "380px";
+          btnchange2.style.display = "none";
+          btnchange1.style.display = "initial";
+          form1.style.display = "none";
+          form2.style.display = "block";
+        })
+    
+        btnchange1.addEventListener('click',()=>{
+          LOGINBOX.style.marginLeft = "30px";
+          btnchange1.style.display = "none";
+          btnchange2.style.display = "initial";                       form1.style.display = "block";
+          form2.style.display = "none";                             
+        })
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+</html>
